@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1000" height="1000" viewBox="-500 -500 1000 1000"
+     style="background-color:black"
+>
+
+  <path fill="white" d="M0,0 m-500,-500 h1000 v1000 h-1000 v-1000 z" />
+
+<!--
+  <circle fill="lightgrey" cx="0" cy="0" r="290" />
+  <circle fill="white" cx="0" cy="0" r="120" />
+-->
+
+  <g transform="translate(0,0) scale(3.0,3.0) rotate(0)  "> <path id="Q1" stroke="none"   fill="#9db5ce" d="M0,0 m2,-2 m0,-100 a102,102 0 0,1 100,100 l-30,5 l-30,-5 a41,41 0 0,0 -40,-40 l5,-30 l-5,-30" /> </g>
+  <g transform="translate(0,0) scale(3.0,3.0) rotate(90) "> <path id="Q2" stroke="none"   fill="#9db5ce" d="M0,0 m2,-2 m0,-100 a102,102 0 0,1 100,100 l-30,5 l-30,-5 a41,41 0 0,0 -40,-40 l5,-30 l-5,-30" /> </g>
+  <g transform="translate(0,0) scale(3.0,3.0) rotate(180)"> <path id="Q3" stroke="none"   fill="#9db5ce" d="M0,0 m2,-2 m0,-100 a102,102 0 0,1 100,100 l-30,5 l-30,-5 a41,41 0 0,0 -40,-40 l5,-30 l-5,-30" /> </g>
+  <g transform="translate(0,0) scale(3.0,3.0) rotate(270)"> <path id="Q4" stroke="none"   fill="#9db5ce" d="M0,0 m2,-2 m0,-100 a102,102 0 0,1 100,100 l-30,5 l-30,-5 a41,41 0 0,0 -40,-40 l5,-30 l-5,-30" /> </g>
+
+  <g transform="translate(0,0) scale(2.5,2.5)">
+    <path id="Q1L2" stroke="none"  fill="none" d="M0,0   M0,-100   a100,100      0 0,1  100,100" />
+    <path id="Q2L2" stroke="none"  fill="none" d="M0,0   M100,0    a100,100     90 0,1 -100,100" />
+    <path id="Q3L2" stroke="none"  fill="none" d="M0,0   M0,100    a100,100    180 0,1 -100,-100" />
+    <path id="Q4L2" stroke="none"  fill="none" d="M0,0   M-100,0   a100,100    270 0,1  100,-100" />
+
+  <text style="font-size:10px; font-weight:normal; font-family:sans-serif;">
+    <textPath startOffset="20%" href="#Q1L2" text-anchor="start"  >Triage</textPath>
+    <textPath startOffset="80%" href="#Q1L2" text-anchor="end"    >Severity</textPath>
+
+    <textPath startOffset="20%" href="#Q2L2" text-anchor="start"  >Internal</textPath>
+    <textPath startOffset="80%" href="#Q2L2" text-anchor="end"    >External</textPath>
+
+    <textPath startOffset="20%" href="#Q3L2" text-anchor="start"  >Expert</textPath>
+    <textPath startOffset="90%" href="#Q3L2" text-anchor="end"    >Commander</textPath>
+
+    <textPath startOffset="20%" href="#Q4L2" text-anchor="start"  >Isolate</textPath>
+    <textPath startOffset="80%" href="#Q4L2" text-anchor="end"    >Mitigate</textPath>
+  </text>
+  </g>
+
+  <g transform="translate(0,0) scale(1.45,1.45)">
+    <path id="Q1L1" stroke="none" fill="none" d="M0,0   M0,-100   a100,100      0 0,1  100,100" />
+    <path id="Q2L1" stroke="none" fill="none" d="M0,0   M100,0    a100,100     90 0,1 -100,100" />
+    <path id="Q3L1" stroke="none" fill="none" d="M0,0   M0,100    a100,100    180 0,1 -100,-100" />
+    <path id="Q4L1" stroke="none" fill="none" d="M0,0   M-100,0   a100,100    270 0,1  100,-100" />
+
+  <text style="font-size:32px; font-weight:bold; font-family:sans-serif;">
+    <textPath startOffset="50%" text-anchor="middle" side="left"  href="#Q1L1">Assess</textPath>
+    <textPath startOffset="50%" text-anchor="middle" side="right" href="#Q2L1">Inform</textPath>
+    <textPath startOffset="50%" text-anchor="middle" side="right" href="#Q3L1">Escalate</textPath>
+    <textPath startOffset="50%" text-anchor="middle" side="left"  href="#Q4L1">Stabilize</textPath>
+  </text>
+  </g>
+
+</svg>
